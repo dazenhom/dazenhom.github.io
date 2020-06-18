@@ -2,9 +2,9 @@
 **CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn**
 ### UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
 - model introduction
-![Image](pic/tacotron.pdf)
+![Image](/pic/tacotron.png)
 - audio demo
-[demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
+[demo page](/htmls/xvec-tts.html)
 
 ### VAE based nonparallel voice conversion demo
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
