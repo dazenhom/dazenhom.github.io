@@ -1,12 +1,15 @@
-## Welcome to GitHub Pages
+## Welcome to Zhihang Xu(徐志航）'s Text-To-Speech Demo Page
+CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn
+### UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
+- model introduction
+- audio demo
+[demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
-You can use the [editor on GitHub](https://github.com/dazenhom/dazenhom.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### VAE based nonparallel voice conversion demo
+- [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### F0 controlled Tacotron speech synthesis demo
+- [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
 ```markdown
 Syntax highlighted code block
