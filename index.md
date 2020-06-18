@@ -1,7 +1,8 @@
 ## Welcome to Zhihang Xu(徐志航）'s Text-To-Speech Demo Page
-CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn
+**CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn**
 ### UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
 - model introduction
+![Image](pic/tacotron.pdf)
 - audio demo
 [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
