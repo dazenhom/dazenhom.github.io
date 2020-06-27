@@ -4,7 +4,7 @@
 - model introduction
 ![Image](/pic/tacotron.png)
 - audio demo
-[demo page](/html/xvec-tts.html)
+[demo page](/htmls/xvec-tts.html)
 
 ### VAE based nonparallel voice conversion demo
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
