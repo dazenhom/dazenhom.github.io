@@ -6,6 +6,9 @@
 - audio demo
 [demo page](/htmls/xvec-tts.html)
 
+### Blizzard Challenge demo
+- [demo page](/htmls/bc2019.html)
+
 ### VAE based nonparallel voice conversion demo
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
