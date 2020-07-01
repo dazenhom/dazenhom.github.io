@@ -3,17 +3,24 @@
 ### UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
 - model introduction
 ![Image](/pic/tacotron.png)
+
 - audio demo
 [demo page](/htmls/xvec-tts.html)
 
 ### Blizzard Challenge demo
+- Here we give some examples of speeches synthesized using test texts in difference types: 1 minute long talk show texts/ short spoken texts / Chinese poems
 - [demo page](/htmls/bc2019.html)
 
 ### VAE based nonparallel voice conversion demo
+- Here we show the voice conversion among Chinese speakers and English speakers.
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
 ### F0 controlled Tacotron speech synthesis demo
-- [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
+- We use the F0 statistic feature(mean and std) of a small audio segment (from phone asr force alignment) to control the speech speaking style
+- For inference, we use the text to predict the F0 statistic feature
+- We can see the result that the speeches is controlled by F0 mean and std obviously.
+  - mean controls the pitch level. [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/mean/mean.html)
+  - std controls the speech variance to make the speech more excited or negative. [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/mean/mean.html)
 
 ```markdown
 Syntax highlighted code block
