@@ -10,9 +10,6 @@
 ***
 
 - ## Bo Chen, Kuan Chen , Zhijun Liu, Zhihang Xu, Songze Wu, Chenpeng Du, Muyang Li, Sijun Li, Kai Yu. “SJTU Entry in Blizzard Challenge 2019"[paper](http://www.festvox.org/blizzard/bc2019/sjtu_blizzardchallenge2019.pdf)
-  - In this chanllenge, to build a high speech quality with rich speaking styles, the TTS system is consist of "Front-end Text processor","Back-end Spectrum mode","Wavenet Vocoder" and "Bandwith Extender".
-  - Back-end Spectrum model introction
-  ![Image](/pic/bc2019/struc2.png)
   - Here we give some examples of speeches synthesized using test texts in difference types: 1 minute long talk show texts/ short spoken texts / Chinese poems
   - ### [demo page](/htmls/bc2019.html)
 ***
