@@ -14,7 +14,7 @@
 - In this chanllenge, to build a high speech quality with rich speaking styles, the TTS system is consist of "Front-end Text processor","Back-end Spectrum mode","Wavenet Vocoder" and "Bandwith Extender".
   - High level model view
 ![Image](/pic/bc2019/struc1.png)
-<!-- 
+<!--
 - Back-end Spectrum model introction
 ![Image](/pic/bc2019/struc2.png)
 -->
