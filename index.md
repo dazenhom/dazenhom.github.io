@@ -1,27 +1,28 @@
-## Welcome to Zhihang Xu(徐志航）'s Text-To-Speech Demo Page
+# Welcome to Zhihang Xu(徐志航）'s Text-To-Speech Demo Page
 **CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn**
-### UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
-- model introduction
+## UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
+- In this paper, we proposed a novel unsupervised adaptation method, which makes the TTS model parameters controlled by xvector.
+- The experiments result shows that this can improve the similarity and naturalness especially on dirty unseen speakers.
+- model introduction: we followed the Tacotron2 framework, and make the decoder LSTM to controlled by scaling the shifting vectors, whici are trained from xvector with the whole TTS model.
 ![Image](/pic/xvec/tacotron.png)
-
-- audio demo
+- Here give some audio samples
 [demo page](/htmls/xvec-tts.html)
 
-### Bo Chen, Kuan Chen , Zhijun Liu, Zhihang Xu, Songze Wu, Chenpeng Du, Muyang Li, Sijun Li, Kai Yu. “SJTU Entry in Blizzard Challenge 2019"
+## Bo Chen, Kuan Chen , Zhijun Liu, Zhihang Xu, Songze Wu, Chenpeng Du, Muyang Li, Sijun Li, Kai Yu. “SJTU Entry in Blizzard Challenge 2019"
 ### Blizzard Challenge 2019 demo
-- model introduction
-```
-![Image](/pic/bc2019/struc2.png)
-```
+- In this chanllenge, to build a high speech quality with rich speaking styles, the TTS system is consist of "Front-end Text processor","Back-end Spectrum mode","Wavenet Vocoder" and "Bandwith Extender".
+  - High level model view
 ![Image](/pic/bc2019/struc1.png)
+- Back-end Spectrum model introction
+![Image](/pic/bc2019/struc2.png)
 - Here we give some examples of speeches synthesized using test texts in difference types: 1 minute long talk show texts/ short spoken texts / Chinese poems
 - [demo page](/htmls/bc2019.html)
 
-### VAE based nonparallel voice conversion demo
+## VAE based nonparallel voice conversion demo
 - Here we show the voice conversion among Chinese speakers and English speakers.
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
-### F0 controlled Tacotron speech synthesis demo
+## F0 controlled Tacotron speech synthesis demo
 - model introduction
 ![Image](/pic/f0/f0-struc.png)
 - We use the F0 statistic feature(mean and std) of a small audio segment (from phone asr force alignment) to control the speech speaking style
@@ -29,31 +30,3 @@
 - We can see the result that the speeches is controlled by F0 mean and std obviously.
   - mean controls the pitch level. [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/mean/mean.html)
   - std controls the speech variance to make the speech more excited or negative. [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/mean/mean.html)
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dazenhom/dazenhom.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
