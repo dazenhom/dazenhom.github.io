@@ -9,16 +9,18 @@
 [demo page](/htmls/xvec-tts.html)
 
 ## Bo Chen, Kuan Chen , Zhijun Liu, Zhihang Xu, Songze Wu, Chenpeng Du, Muyang Li, Sijun Li, Kai Yu. “SJTU Entry in Blizzard Challenge 2019"
-### Blizzard Challenge 2019 demo
 - In this chanllenge, to build a high speech quality with rich speaking styles, the TTS system is consist of "Front-end Text processor","Back-end Spectrum mode","Wavenet Vocoder" and "Bandwith Extender".
   - High level model view
 ![Image](/pic/bc2019/struc1.png)
+<!-- 
 - Back-end Spectrum model introction
 ![Image](/pic/bc2019/struc2.png)
+-->
 - Here we give some examples of speeches synthesized using test texts in difference types: 1 minute long talk show texts/ short spoken texts / Chinese poems
 - [demo page](/htmls/bc2019.html)
 
 ## VAE based nonparallel voice conversion demo
+- In this research, we apply [TCVAE](https://arxiv.org/pdf/1802.04942.pdf) into Voice conversion on Chinese corpus.
 - Here we show the voice conversion among Chinese speakers and English speakers.
 - [demo page](https://dazenhom.github.io/sjtu_tts_report/20181023/old_mean/mean.html)
 
