@@ -19,7 +19,7 @@
 
 
 - ## TCVAE based Nonparallel Voice Conversion demo
-  -![Image](/pic/vae-vc/tcvae.jpg)
+  -![Image](/pic/vae-vc/vae-vc2.jpg)
   - In this research, we apply [TCVAE](https://arxiv.org/pdf/1802.04942.pdf) into nonparallel voice conversion on Chinese corpus.
   - also we compare the different usual acoustic feature for this task, shows the importance f0 feature for voice conversion task on Chinese corpus.
   - Here we show the voice conversion among Chinese speakers and English speakers.
