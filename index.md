@@ -1,8 +1,17 @@
 # Welcome to Zhihang Xu(徐志航）'s Text-To-Speech Demo Page
-(/htmls/phn-emb.html)
 **CONTACT me dazenhom#gmail.com or dazenhom666#sjtu.edu.cn**
 ***
-- ## UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (submitted to Interspeech2020)
+- ## Phone level speaker embedding based speech synthesis adaption method under small data, Zhihang Xu, Bo Chen, Kai Yu
+  - In this paper, we proposed a novel phone leveled speaker embedding for speaker adaptation, especially VOICE CLONING task
+  - we can achieve best similarity compared with other embeddings, making adaptation training faster and stable.
+  ![Image](/pic/phnemb/durian.png)
+  ![Image](/pic/phnemb/ref_encoder.png)
+  - ### [demo page](/htmls/phn-emb.html)
+***
+
+
+***
+- ## UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (rejected by Interspeech2020)
   - In this paper, we proposed a novel unsupervised adaptation method, which makes the TTS model parameters controlled by xvector.
   - The experiments result shows that this can improve the similarity and naturalness especially on dirty unseen speakers.
   - model introduction: we followed the Tacotron2 framework, and make the decoder LSTM to controlled by scaling the shifting vectors, whici are trained from xvector with the whole TTS model.
