@@ -2,15 +2,18 @@
 <html>
 <body>
 <h1> Phone-level speaker embedding based speaker adaptation method audio demo</h1>
-<h2> Here we provide some audio samples for unseen speakers, and explain the abbreviations below</h2>
-<h2> OracleVocode: orignal acoustic feature re-resynthesized by vocoder </h2>
-<h2> Xvec: use xvector as speaker embedding </h2>
-<h2> UttEmb: use reference audios to get utterance level speaker embedding using reference encoder</h2>
-<h2> Attentron: use reference audios to get frame level speaker embedding using attention based reference encoder </h2>
-<h2> PhnEmb(proposed): use predictor to get phon level speaker embedding </h2>
-<h2> +Adapt: also updating the LSTM in decode </h2>
+<h3> Here we provide some audio samples generated aftering different speaker embedding methods, and explain the abbreviations below</h3>
 
-<h3>test speaker1: kuanghongwei</h3>
+<ul>
+<li> OracleVocode: orignal acoustic feature re-resynthesized by vocoder </li>
+<li> Xvec: use xvector as speaker embedding </li>
+<li> UttEmb: use reference audios to get utterance level speaker embedding using reference encoder</li>
+<li> Attentron: use reference audios to get frame level speaker embedding using attention based reference encoder </li>
+<li> PhnEmb(proposed): use predictor to get phon level speaker embedding </li>
+<li> +Adapt: also updating the LSTM in decode </li>
+</ul>
+
+<h2>test speaker1: kuanghongwei</h2>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -55,15 +58,6 @@
 <th><audio src="./audio/phn-emb/mean_conv512/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
-</table>
-<h3> test speaker1:kuanghongwei +Adapt </h3>
-<table border="1"><tr>
-<th>Text</th>
-<th>-</th>
-<th>-</th>
-<th>-</th>
-</tr>
-
 <tr>
 <th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -96,7 +90,7 @@
 
 
 
-<h3>test speaker2: houjinxiong</h3>
+<h2>test speaker2: houjinxiong</h2>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -140,15 +134,6 @@
 <th><audio src="./audio/phn-emb/mean_conv512/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
-</table>
-<h3> test speaker2:houjinxiong +Adapt </h3>
-<table border="1"><tr>
-<th>Text</th>
-<th>-</th>
-<th>-</th>
-<th>-</th>
-</tr>
-
 <tr>
 <th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -187,8 +172,5 @@
 </tr>
 </table>
 
-
-
 </body>
 </html>
-
