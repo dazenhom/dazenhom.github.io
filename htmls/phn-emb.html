@@ -1,8 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-<h1>Phone Leve Speaker embedding demo</h1>
-<h3>kuanghongwei</h3>
+<h1> Phone-level speaker embedding based speaker adaptation method audio demo</h1>
+<h2> Here we provide some audio samples for unseen speakers, and explain the abbreviations below</h2>
+<h2> OracleVocode: orignal acoustic feature re-resynthesized by vocoder </h2>
+<h2> Xvec: use xvector as speaker embedding </h2>
+<h2> UttEmb: use reference audios to get utterance level speaker embedding using reference encoder</h2>
+<h2> Attentron: use reference audios to get frame level speaker embedding using attention based reference encoder </h2>
+<h2> PhnEmb(proposed): use predictor to get phon level speaker embedding </h2>
+<h2> +Adapt: also updating the LSTM in decode </h2>
+
+<h3>test speaker1: kuanghongwei</h3>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -11,7 +19,7 @@
 </tr>
 
 <tr>
-<th>original-vocode</th>
+<th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-15-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-9-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -19,28 +27,36 @@
 </tr>
 
 <tr>
-<th>attentron</th>
+<th>Xvec</th>
+<th><audio src="./audio/phn-emb/xvec/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvec/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvec/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+</tr>
+
+<tr>
+<th>UttEmb</th>
+<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+</tr>
+
+
+<tr>
+<th>Attentron</th>
 <th><audio src="./audio/phn-emb/attentron/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attentron/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attentron/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>utterance embedding</th>
-<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/utt/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-</tr>
-
-<tr>
-<th>phn embedding(proposed)</th>
+<th>PhnEmb(proposed)</th>
 <th><audio src="./audio/phn-emb/mean_conv512/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 </table>
-<h3> Adaptation </h3>
+<h3> test speaker1:kuanghongwei +Adapt </h3>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -49,7 +65,7 @@
 </tr>
 
 <tr>
-<th>original-vocode</th>
+<th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-15-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/kuanghongwei/kuanghongwei-9-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -57,21 +73,21 @@
 </tr>
 
 <tr>
-<th>attentron</th>
+<th>Attentron+Adapt</th>
 <th><audio src="./audio/phn-emb/attrondec/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attrondec/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attrondec/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>utterance embedding</th>
+<th>UttEmb+Adapt</th>
 <th><audio src="./audio/phn-emb/uttdec/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/uttdec/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/uttdec/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>phn embedding(proposed)</th>
+<th>PhnEmb+Adapt(proposed)</th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/kuanghongwei/kuanghongwei-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/kuanghongwei/kuanghongwei-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/kuanghongwei/kuanghongwei-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -80,7 +96,7 @@
 
 
 
-<h3>houjinxiong</h3>
+<h3>test speaker2: houjinxiong</h3>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -89,7 +105,7 @@
 </tr>
 
 <tr>
-<th>original-vocode</th>
+<th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-15-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-9-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -97,28 +113,35 @@
 </tr>
 
 <tr>
-<th>attentron</th>
-<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th>Xvec</th>
+<th><audio src="./audio/phn-emb/xvec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>utterance embedding</th>
+<th>UttEmb</th>
 <th><audio src="./audio/phn-emb/utt/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/utt/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/utt/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>phn embedding(proposed)</th>
+<th>Attentron</th>
+<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/attentron/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+</tr>
+
+<tr>
+<th>PhnEmb(proposed)</th>
 <th><audio src="./audio/phn-emb/mean_conv512/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 </table>
-<h3> Adaptation </h3>
+<h3> test speaker2:houjinxiong +Adapt </h3>
 <table border="1"><tr>
 <th>Text</th>
 <th>-</th>
@@ -127,7 +150,7 @@
 </tr>
 
 <tr>
-<th>original-vocode</th>
+<th>OracleVocode</th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-1-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-15-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/oracle/houjinxiong/houjinxiong-9-lpc-male.oracle.wav" controls="controls">Audio Tag not supported.</audio></th>
@@ -135,21 +158,29 @@
 </tr>
 
 <tr>
-<th>attentron</th>
+<th>Xvec+Adapt</th>
+<th><audio src="./audio/phn-emb/xvecdec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvecdec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/xvecdec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+</tr>
+
+<tr>
+<th>UttEmb+Adapt</th>
+<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
+</tr>
+
+
+<tr>
+<th>Attentron+Adapt</th>
 <th><audio src="./audio/phn-emb/attrondec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attrondec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/attrondec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 </tr>
 
 <tr>
-<th>utterance embedding</th>
-<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-<th><audio src="./audio/phn-emb/uttdec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
-</tr>
-
-<tr>
-<th>phn embedding(proposed)</th>
+<th>PhnEmb+Adapt(proposed)</th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/houjinxiong/houjinxiong-1-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/houjinxiong/houjinxiong-15-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
 <th><audio src="./audio/phn-emb/mean_conv512dec/houjinxiong/houjinxiong-9-lpc-male.wav" controls="controls">Audio Tag not supported.</audio></th>
