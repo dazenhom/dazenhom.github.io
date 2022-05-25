@@ -11,9 +11,10 @@
   - ### [demo page](/htmls/bc2021.html)
   ![Image](/pic/bc2021/struct.png)
 
-        MOS                |  Similarity MOS
-:-------------------------:|:-------------------------:
+        MOS                   |  Similarity MOS
+------------------------------|----------------------------------
 ![Image](/pic/bc2021/MOS.png) | ![Image](/pic/bc2021/SMOS.png)
+
 ***
 
 ***
