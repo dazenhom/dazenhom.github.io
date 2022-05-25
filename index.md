@@ -10,7 +10,7 @@
     - The second is to model the variation information in speech through a systematic design, which improves the prosody and naturalness. 
   - ### [demo page](/htmls/bc2021.html)
   ![Image](/pic/bc2021/struct.png)
-  ![Image](/pic/bc2021/MOS.png)![Image](/pic/bc2021/SMOS.png)
+  ![Image](/pic/bc2021/MOS.png) ![Image](/pic/bc2021/SMOS.png)
 ***
 
 ***
