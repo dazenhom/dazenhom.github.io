@@ -3,7 +3,7 @@
 
 ***
 - ## DelightfulTTS: The Microsoft Speech Synthesis System for Blizzard Challenge 2021, Yanqing Liu, Zhihang Xu, Gang Wang, Kuan Chen, Bohan Li, Xu Tan, Jinzhu Li, Lei He, Sheng Zhao (/https://arxiv.org/abs/2110.12612)
-  - This paper describes the Microsoft end-to-end neural text to speech (TTS) system: DelightfulTTS for Blizzard Challenge 2021. 
+  - This paper describes the Microsoft end-to-end neural text to speech (TTS) system: DelightfulTTS for Blizzard Challenge 2021. (link: https://arxiv.org/abs/2110.12612)
   - DelightfulTTS achieves 4.17 mean score in MOS test and 4.35 in SMOS test, which won the 1st place in MOS/SMOS/SUS intelligibility in SH1 task out of 13 teams.
   - Model detail highlight: 
     - we directly model and generate waveform in 48 kHz sampling rate, which brings higher perception quality than previous systems with 16 kHz or 24 kHz sampling rate
@@ -32,6 +32,7 @@
 - ## Phone level speaker embedding based speech synthesis adaption method under small data, Zhihang Xu, Bo Chen, Kai Yu
   - In this paper, we proposed a novel phone leveled speaker embedding for speaker adaptation, especially VOICE CLONING task
   - we can achieve best similarity compared with other embeddings, making adaptation training faster and stable.
+  - paper link: http://cjc.ict.ac.cn/online/onlinepaper/xzh-2022426184330.pdf
   ![Image](/pic/phnemb/durian.png)
   ![Image](/pic/phnemb/ref_encoder.png)
   - ### [demo page](/htmls/phn-emb.html)
