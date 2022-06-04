@@ -21,6 +21,7 @@
     - English mixlingual TTS backend solution.
     - Full distillation for compress model size, RTF and latency.
     - Multiple Band 24k hifiNet vocoder.
+  - ### [demo page](/htmls/xiaoxiao.html)
 ***
 
 ***
