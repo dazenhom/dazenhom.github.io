@@ -30,9 +30,9 @@
     - Model detail highlight:
       - model structure compression and dimension compression.
       - Change conformer feed forward layer into separable CNN and reload teacher network.
-        ![Image](/pic/full_distillation/seperable_CNN.png)
+        ![Image](/pic/full_distillation/seperable_CNN.jpg)
       - Auxiliary encoder hidden constraint and attention constraint.
-        ![Image](/pic/full_distillation/constraint.png)
+        ![Image](/pic/full_distillation/constraint.jpg)
 ***
 
 ***
