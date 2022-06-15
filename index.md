@@ -14,7 +14,7 @@
 ***
 
 ***
-- ## Multistyle Mixlingual Xiaoxiao Unitts-v4 model building
+- ## Multistyle Mixlingual Xiaoxiao v4 model building
   - Model detail highlight: 
     - Encoder and decoder pretraining.
     - Style disentanglement on mutiple style imbalanced dataset.
@@ -24,10 +24,6 @@
   - ### [demo page](/htmls/xiaoxiao.html)
 ***
 
-***
-- ## Spontanous(Conversational) Xiaochen Unitts-v4 model building
-  - Model detail highlight: 
-***
 
 ***
 - ## Phone level speaker embedding based speech synthesis adaption method under small data, Zhihang Xu, Bo Chen, Kai Yu
