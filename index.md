@@ -24,6 +24,16 @@
   - ### [demo page](/htmls/xiaoxiao.html)
 ***
 
+***
+- ## Full distillation method and multiple AM for Uni-TTS v4. 
+    - Motivation: reduce model size, save memory, flexible acoustic model combination, provide different compression ratio for different purpose.
+    - Model detail highlight:
+      - model structure compression and dimension compression.
+      - Change conformer feed forward layer into separable CNN and reload teacher network.
+        ![Image](/pic/full_distillation/seperable_CNN.png)
+      - Auxiliary encoder hidden constraint and attention constraint.
+        ![Image](/pic/full_distillation/constraint.png)
+***
 
 ***
 - ## Phone level speaker embedding based speech synthesis adaption method under small data, Zhihang Xu, Bo Chen, Kai Yu
