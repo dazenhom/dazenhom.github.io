@@ -45,6 +45,26 @@
   - ### [demo page](/htmls/phn-emb.html)
 ***
 
+***
+- ## PrEtrained Text Speech(PETS) for prosody model
+  - we propsed a new way to build prosody model inspired from (Automatic Prosody Annotation with Pre-Trained Text-Speech Model, Tencent AI Lab, 2Peking University)
+  ![Image](/pic/PETS/overall.png)
+  ![Image](/pic/PETS/model.png)
+   - step 1. Data preparation:
+    - Using Annotation model to extract pseudo prosody label from paired (text, speech) data from our zhcn ttsdata. 
+    - Handling the pseudo labels into our prosody break (br0-br4)
+   - step 2. Speech-text joint pretraining
+    - Using a pretraining framework like SLAM
+    - Traditional unsupervised task: MLM, constrastive loss
+    - SLAM will restore some pretrained NLP model roberta  Ernine3.0  ELECTRA and some pretrained speech models like wav2vec2, Hubert, w2v-BERT
+    - Prosody prediction task will be designed using CTC based model to get preudo label
+   - step 3 Text-only prosody model refinement
+   - step 4 retrain AM with new prosody model
+  - score card
+  ![Image](/pic/PETS/score_card.jpg)
+  - ### [demo page] not ready
+***
+
 
 ***
 - ## UNSUPERVISED TTS SPEAKER ADAPTATION USING X-VECTOR CONTROLLED PARAMETERS, Zhihang Xu, Bo Chen, Kai Yu (rejected by Interspeech2020)
