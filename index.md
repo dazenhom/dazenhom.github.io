@@ -2,7 +2,30 @@
 **CONTACT me xuzhihang2007#163.com or zhihangxu#microsoft.com**
 
 ***
-- ## DelightfulTTS: The Microsoft Speech Synthesis System for Blizzard Challenge 2021, Yanqing Liu, Zhihang Xu, Gang Wang, Kuan Chen, Bohan Li, Xu Tan, Jinzhu Li, Lei He, Sheng Zhao (/https://arxiv.org/abs/2110.12612)
+- ## Decoder only AR speech synthesis
+  - basic structure just like xtts
+  - 50ms based group residual VQ pretrained on large amount of foundation data
+  - gpt like transfomer model with parallel code prediction
+  - xtts like preceiver-resampler with code emb as input
+  - training strategy: flash attention / bfloat16 / gradient accumulate
+  ![Image](/pic/xtts/struct.png)
+
+***
+
+***
+- ## MuLanTTS: The Microsoft Speech Synthesis System for Blizzard Challenge 2023, Zhihang Xu, Shaofei Zhang, Xi Wang, Jiajun Zhang, Wenning Wei, Lei He, Sheng Zhao
+  - In this paper, we present MuLanTTS, the Microsoft end-toend neural text-to-speech (TTS) system designed for the Blizzard Challenge 2023.
+  - MuLanTTS achieves mean scores of quality assessment 4.3 and 4.5 in the respective tasks, statistically comparable with natural speech while keeping good similarity according to similarity assessment. The excellent quality and similarity in this year’s new and dense statistical evaluation show the effectiveness of our proposed system in both tasks.
+  - Model detail highlight: 
+    - leverage of pretrained text emb from NLP task
+    - paragraph training with contextual sentences.
+  ![Image](/pic/bc2023/struct.png)
+
+***
+
+
+***
+- ## DelightfulTTS: The Microsoft Speech Synthesis System for Blizzard Challenge 2021, Yanqing Liu, Zhihang Xu, Gang Wang, Kuan Chen, Bohan Li, Xu Tan, Jinzhu Li, Lei He, Sheng Zhao
   - This paper describes the Microsoft end-to-end neural text to speech (TTS) system: DelightfulTTS for Blizzard Challenge 2021. (link: https://arxiv.org/abs/2110.12612)
   - DelightfulTTS achieves 4.17 mean score in MOS test and 4.35 in SMOS test, which won the 1st place in MOS/SMOS/SUS intelligibility in SH1 task out of 13 teams.
   - Model detail highlight: 
