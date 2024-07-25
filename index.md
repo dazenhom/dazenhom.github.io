@@ -9,6 +9,7 @@
   - xtts like preceiver-resampler with code emb as input
   - training strategy: flash attention / bfloat16 / gradient accumulate
   ![Image](/pic/xtts/struct.png)
+  - ### [demo page](/htmls/xtts.html)
 
 ***
 
